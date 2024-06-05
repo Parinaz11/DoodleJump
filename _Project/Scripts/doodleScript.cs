@@ -5,13 +5,7 @@ using UnityEngine;
 public class doodleScript : MonoBehaviour
 {
 
-    [SerializeField] private Rigidbody rigidbody;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
+    [SerializeField] float amount = 0.1f;
     // Update is called once per frame
     void Update()
     {
@@ -20,6 +14,13 @@ public class doodleScript : MonoBehaviour
             Debug.Log("A");
             transform.position = new Vector3(transform.position.x - 0.5f, transform.position.y);
         }
+        // if (Input.GetMouseButtonDown(0)){
+        //     Vector2 cleckedPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        //     Debug.Log(clockedPosition);
+
+        //     // visual1.setActive(false);
+        //     // visual2.setActive(true);
+        // }
         if (Input.GetKeyUp(KeyCode.D)){
             Debug.Log("D");
             transform.position = new Vector3(transform.position.x + 0.5f, transform.position.y);

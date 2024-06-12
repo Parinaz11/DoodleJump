@@ -5,7 +5,7 @@ using UnityEngine;
 public class platformGreenBehavior : MonoBehaviour
 {
 
-    public float jumpForce = 10f;
+    public float jumpForce = 5f;
 
     void OnCollisionEnter2D(Collision2D collision){
 

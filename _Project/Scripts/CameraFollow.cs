@@ -2,21 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMove : MonoBehaviour
+public class CameraFollow : MonoBehaviour
 {
 
-    // [SerializeField] private GameObject doodle;
-    // float diff = 1.929999f;
-
-    // // Update is called once per frame
-    // void Update()
-    // {
-    //     transform.position = new Vector3(transform.position.x, doodle.transform.position.y - diff, -10);
-    // }
-
     public Transform target;
-
- 
+    public float smoothSpeed = 0.3f;
+    public Vector3 currentVelocity;
 
     // Update is called once per frame
     void LateUpdate()
@@ -29,6 +20,6 @@ public class CameraMove : MonoBehaviour
 
         }
     }
+
+
 }
-
-
